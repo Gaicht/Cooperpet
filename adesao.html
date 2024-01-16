@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>FORMULÁRIO DE ADESÃO COOPERPET</h2>
+
+<form action="mailto:gaicht@outlook.com" method="post" enctype="text/plain">
+  Nome:<br>
+  <input type="text" name="nome" value=""><br>
+  CPF:<br>
+  <input type="text" name="cpf" value=""><br>
+  E-mail:<br>
+  <input type="text" name="email" value=""><br>
+  Endereço:<br>
+  <input type="text" name="endereco" value=""><br>
+  CEP:<br>
+  <input type="text" name="cep" value=""><br>
+  Tipo do PET:<br>
+  <input type="radio" name="pet" value="dog"> Dog<br>
+  <input type="radio" name="pet" value="cat"> Cat<br>
+  Coloque a foto do seu PET aqui:<br>
+  <input type="file" name="foto_pet" accept="image/jpeg"><br><br>
+  Opção de pagamento:<br>
+  <input type="radio" name="pagamento" value="credito" onclick="document.getElementById('credito').style.display = 'block'; document.getElementById('debito').style.display = 'none';"> Cartão de Crédito<br>
+  <div id="credito" style="display:none;">
+    Número do cartão:<br>
+    <input type="text" name="numero_cartao" value=""><br>
+    Nome impresso no cartão:<br>
+    <input type="text" name="nome_cartao" value=""><br>
+    Data de validade:<br>
+    <input type="text" name="validade_cartao" value=""><br>
+    Dia de vencimento da fatura:<br>
+    <input type="text" name="vencimento_cartao" value=""><br>
+  </div>
+  <input type="radio" name="pagamento" value="debito" onclick="document.getElementById('debito').style.display = 'block'; document.getElementById('credito').style.display = 'none';"> Débito em Conta<br>
+  <div id="debito" style="display:none;">
+    Número do Banco:<br>
+    <input type="text" name="numero_banco" value=""><br>
+    Agência:<br>
+    <input type="text" name="agencia" value=""><br>
+    Tipo de conta:<br>
+    <input type="radio" name="tipo_conta" value="corrente"> Conta Corrente<br>
+    <input type="radio" name="tipo_conta" value="poupanca"> Poupança<br>
+    Número da conta:<br>
+    <input type="text" name="numero_conta" value=""><br>
+    Dia preferencial de débito:<br>
+    <input type="text" name="dia_debito" value=""><br>
+  </div>
+  <input type="submit" value="Enviar">
+</form> 
+
+</body>
+</html>
